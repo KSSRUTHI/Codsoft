@@ -12,7 +12,7 @@ def generate_password():
     if choice.get() == 1:
         generated_password.insert(0, random.sample(lowercase_alphabets, password_length))
     elif choice.get() == 2:
-        generated_password.insert(0, random.sample(lowercase_alphabets+numbers, password_length))
+        generated_password.insert(0, random.sample(lowercase_alphabets+numbers+uppercase_alphabets, password_length))
     elif choice.get() == 3:
         generated_password.insert(0, random.sample(combination_of_characters, password_length))
 
